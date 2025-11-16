@@ -6,7 +6,7 @@ function realTime() {
     var Hour = document.getElementById('hour');
     var Minute = document.getElementById('minute');
     var Second = document.getElementById('second');
-    var am = 'AM';
+    var AMPM = document.getElementById('am');
 
     var Y = new Date().getFullYear();
     var M = new Date().getMonth() + 1;
@@ -14,6 +14,7 @@ function realTime() {
     var H = new Date().getHours();
     var m = new Date().getMinutes();
     var s = new Date().getSeconds();
+    var am = 'AM';
 
     if (H > 12) {
         H = H - 12;
@@ -30,6 +31,7 @@ function realTime() {
     Hour.innerText = H;
     Minute.innerText = m;
     Second.innerText = s;
+    AMPM.innerText = am;
 };
 
 var interval = setInterval(realTime, 1000); //buat jam realtime berjalan
