@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Digital</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- jam realtime -->
+      <div class="realtime">
+        <div class="date">
+          <span id="date"></span> - 
+          <span id="month"></span> -
+          <span id="year"></span>
+        </div>
+
+        <div class="hour">
+          <span id="hour"></span> : 
+          <span id="minute"></span> :
+          <span id="second"></span>
+        </div>
+      </div>
+
+      <div class="alarm">
+
+        <!-- untuk user setting alarm -->
+
+        <div class="alarm-set" id="time-set">
+          <input type="time" id="alarm-set" />
+        </div>
+
+        <!-- tombol untuk on/off alarm -->
+        <div class="alarm-button">
+          <input type="checkbox" id="toggle-on/off" />
+          <label for="toggle"> </label>
+        </div>
+        <button type="reset" id="reset-btn"></button>
+      </div>
+    </div>
+  </body>
+</html>
